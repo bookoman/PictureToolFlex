@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   width="800" 
+					   height="600"
+					   addedToStage="onAddedToStage()">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.xl.tool.control.CutPictureViewMediator;
+			import com.xl.tool.control.JigsawViewMediator;
+			import morn.core.handlers.Handler;
+			import morn.core.managers.ResLoader;
+			
+			private var jigsawViewMediator:JigsawViewMediator;
+			private var cutPictureMediator:CutPictureViewMediator;
+			private var view:MainUI;
+			import ui.MainUI;
+			private function onAddedToStage():void{
+				App.init(main);
+				App.loader.load("res/swf/comp.swf",ResLoader.SWF,new Handler(onCompleted));
+			}
+			private function onCompleted(e:*):void
+			{
+				this.view = new MainUI();
+				App.stage.addChild(this.view);
+				this.view.btnJoin.addEventListener(MouseEvent.CLICK,this.onMouseClick);
+				this.view.btnCut.addEventListener(MouseEvent.CLICK,this.onMouseClick);
+				
+			}
+			private function onMouseClick(e:MouseEvent):void
+			{
+				this.view.visible = false;
+				switch(e.currentTarget)
+				{
+					case this.view.btnJoin:
+						this.jigsawViewMediator = new JigsawViewMediator(callShow);
+						this.jigsawViewMediator.initView();
+						break;
+					case this.view.btnCut:
+						this.cutPictureMediator = new CutPictureViewMediator(callShow);
+						this.cutPictureMediator.initView();
+						break;
+				}
+			}
+			
+			private function callShow():void
+			{
+				this.view.visible = true;
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:SpriteVisualElement id="main" />
+</s:WindowedApplication>

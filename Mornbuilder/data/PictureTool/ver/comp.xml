@@ -1,0 +1,34 @@
+<lib>
+  <bitmapdata class="png.comp.bg" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\bg.png" compression="false" quality="80" create="1525355041570473"/>
+  <bitmapdata class="png.comp.blank" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\blank.png" compression="false" quality="80" create="1525355041570933"/>
+  <bitmapdata class="png.comp.btn_close" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\btn_close.png" compression="false" quality="80" create="1525355041570938"/>
+  <bitmapdata class="png.comp.button" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\button.png" compression="false" quality="80" create="1525355041570846"/>
+  <bitmapdata class="png.comp.checkbox" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\checkbox.png" compression="false" quality="80" create="1525355041570351"/>
+  <bitmapdata class="png.comp.clip_num" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\clip_num.png" compression="false" quality="80" create="15253550415747364"/>
+  <bitmapdata class="png.comp.clip_selectBox" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\clip_selectBox.png" compression="false" quality="80" create="15253550415741001"/>
+  <bitmapdata class="png.comp.clip_tree_arrow" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\clip_tree_arrow.png" compression="false" quality="80" create="15253550415741007"/>
+  <bitmapdata class="png.comp.clip_tree_folder" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\clip_tree_folder.png" compression="false" quality="80" create="15253550415751113"/>
+  <bitmapdata class="png.comp.combobox" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\combobox.png" compression="false" quality="80" create="1525355041575634"/>
+  <bitmapdata class="png.comp.hscroll$bar" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\hscroll$bar.png" compression="false" quality="80" create="15253550415751339"/>
+  <bitmapdata class="png.comp.hscroll$down" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\hscroll$down.png" compression="false" quality="80" create="15253550415751745"/>
+  <bitmapdata class="png.comp.hscroll$up" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\hscroll$up.png" compression="false" quality="80" create="15253550415761684"/>
+  <bitmapdata class="png.comp.hscroll" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\hscroll.png" compression="false" quality="80" create="15253550415762830"/>
+  <bitmapdata class="png.comp.hslider$bar" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\hslider$bar.png" compression="false" quality="80" create="15253550415761248"/>
+  <bitmapdata class="png.comp.hslider" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\hslider.png" compression="false" quality="80" create="15253550415762913"/>
+  <bitmapdata class="png.comp.image" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\image.png" compression="false" quality="80" create="152535504157761202"/>
+  <bitmapdata class="png.comp.label" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\label.png" compression="false" quality="80" create="15253550415772909"/>
+  <bitmapdata class="png.comp.linkbutton" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\linkbutton.png" compression="false" quality="80" create="15253550415772909"/>
+  <bitmapdata class="png.comp.progress$bar" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\progress$bar.png" compression="false" quality="80" create="1525355041577303"/>
+  <bitmapdata class="png.comp.progress" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\progress.png" compression="false" quality="80" create="1525355041578280"/>
+  <bitmapdata class="png.comp.radio" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\radio.png" compression="false" quality="80" create="15253550415781096"/>
+  <bitmapdata class="png.comp.radiogroup" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\radiogroup.png" compression="false" quality="80" create="15253550415781096"/>
+  <bitmapdata class="png.comp.tab" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\tab.png" compression="false" quality="80" create="15253550415781238"/>
+  <bitmapdata class="png.comp.textarea" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\textarea.png" compression="false" quality="80" create="15253550415791068"/>
+  <bitmapdata class="png.comp.textinput" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\textinput.png" compression="false" quality="80" create="15253550415791068"/>
+  <bitmapdata class="png.comp.vscroll$bar" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\vscroll$bar.png" compression="false" quality="80" create="1525355041579450"/>
+  <bitmapdata class="png.comp.vscroll$down" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\vscroll$down.png" compression="false" quality="80" create="1525355041580736"/>
+  <bitmapdata class="png.comp.vscroll$up" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\vscroll$up.png" compression="false" quality="80" create="1525355041580780"/>
+  <bitmapdata class="png.comp.vscroll" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\vscroll.png" compression="false" quality="80" create="15253550415812825"/>
+  <bitmapdata class="png.comp.vslider$bar" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\vslider$bar.png" compression="false" quality="80" create="15253550415811248"/>
+  <bitmapdata class="png.comp.vslider" file="F:\MyProject\Flash\PictureTool\morn\assets\comp\vslider.png" compression="false" quality="80" create="15253550415811052"/>
+</lib>

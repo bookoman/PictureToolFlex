@@ -1,0 +1,4 @@
+<View sceneWidth="800" sceneHeight="600" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Button label="合成" skin="png.comp.button" x="178" y="267" layer="1" labelSize="30" var="btnJoin" width="222" height="59"/>
+  <Button label="切割" skin="png.comp.button" x="430" y="267" layer="1" labelSize="30" var="btnCut" width="222" height="59"/>
+</View>
