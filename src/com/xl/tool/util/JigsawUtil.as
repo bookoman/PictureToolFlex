@@ -9,6 +9,7 @@ package com.xl.tool.util
 	import flash.filesystem.FileStream;
 	import flash.geom.Matrix;
 	import flash.geom.Point;
+	import flash.geom.Rectangle;
 	import flash.net.FileFilter;
 	import flash.net.FileReference;
 	import flash.net.FileReferenceList;
@@ -91,8 +92,10 @@ package com.xl.tool.util
 				
 				for each(var item:JigsawItem in this.jigsawItems)
 				{
-					this.bigBmd.draw(item.bmd,new Matrix(1,0,0,1,item.jPoint.x,item.jPoint.y));
-					trace(item.jPoint.x,item.jPoint.y);
+					//用draw由大小限制，绘制不完全
+//					this.bigBmd.draw(item.bmd,new Matrix(1,0,0,1,item.jPoint.x,item.jPoint.y)); 
+					this.bigBmd.copyPixels(item.bmd,new Rectangle(0,0,item.bmd.width,item.bmd.height),item.jPoint);
+//					trace(item.jPoint.x,item.jPoint.y,item.bmd.width,item.bmd.height);
 				}
 				var jpgEncoder:JPEGEncoder = new JPEGEncoder();
 				var imgByteAry:ByteArray = jpgEncoder.encode(this.bigBmd);
