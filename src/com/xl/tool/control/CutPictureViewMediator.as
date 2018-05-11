@@ -25,7 +25,6 @@ package com.xl.tool.control
 			
 			this.view.btnChoice.addEventListener(MouseEvent.CLICK,this.onBtnChoice);
 			this.view.btnCut.addEventListener(MouseEvent.CLICK,this.onBtnCut);
-			this.view.btnSaveDic.addEventListener(MouseEvent.CLICK,this.onBtnSaveDic);
 			this.view.btnClose.addEventListener(MouseEvent.CLICK,this.onBtnClose);
 			
 			App.stage.addEventListener(KeyboardEvent.KEY_UP,this.onKeyUp);
@@ -33,10 +32,6 @@ package com.xl.tool.control
 		private function onBtnChoice(e:MouseEvent):void
 		{
 			this.cutUtil.choiceBigPicture();
-		}
-		private function onBtnSaveDic(e:MouseEvent):void
-		{
-			this.cutUtil.saveCutPictureDic();
 		}
 		private function onBtnCut(e:MouseEvent):void
 		{
@@ -58,7 +53,6 @@ package com.xl.tool.control
 		{
 			this.view.btnChoice.removeEventListener(MouseEvent.CLICK,this.onBtnChoice);
 			this.view.btnCut.removeEventListener(MouseEvent.CLICK,this.onBtnCut);
-			this.view.btnSaveDic.removeEventListener(MouseEvent.CLICK,this.onBtnSaveDic);
 			this.view.btnClose.removeEventListener(MouseEvent.CLICK,this.onBtnClose);
 			App.stage.removeEventListener(KeyboardEvent.KEY_UP,this.onKeyUp);
 			App.stage.removeChild(this.view);

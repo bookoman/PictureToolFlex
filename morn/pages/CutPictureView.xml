@@ -2,12 +2,11 @@
   <Image url="png.comp.blank" x="198" y="167" layer="1" width="417" height="41"/>
   <Label text="合成路径：" x="92" y="174" layer="1" size="20"/>
   <Label x="198" y="174" layer="1" size="20" width="415" height="29" var="lblDic" buttonMode="false" underline="false" bold="false"/>
-  <Button label="浏览" skin="png.comp.button" x="631" y="177" layer="1" labelSize="20" var="btnSaveDic"/>
-  <TextInput skin="png.comp.textinput" x="313" y="265" layer="1" var="inputWidth" width="60" height="22"/>
-  <Label text="宽：" x="264" y="261" layer="1" size="20" toolTip="输入&quot;row,col&quot;格式，算出行列拼图" align="right" width="39" height="30"/>
-  <Button label="选择图片" skin="png.comp.button" x="425" y="283" layer="1" labelSize="18" var="btnChoice"/>
-  <TextInput skin="png.comp.textinput" x="313" y="302" layer="1" var="inputHeight" width="60" height="22"/>
-  <Label text="高：" x="264" y="298" layer="1" size="20" toolTip="输入&quot;row,col&quot;格式，算出行列拼图" align="right" width="38" height="30"/>
+  <TextInput skin="png.comp.textinput" x="256" y="266" layer="1" var="inputWidth" width="60" height="22"/>
+  <Label text="宽：" x="207" y="262" layer="1" size="20" toolTip="输入&quot;row,col&quot;格式，算出行列拼图" align="right" width="39" height="30"/>
+  <Button label="选择图片" skin="png.comp.button" x="483" y="264" layer="1" labelSize="18" var="btnChoice"/>
+  <TextInput skin="png.comp.textinput" x="377" y="266" layer="1" var="inputHeight" width="60" height="22"/>
+  <Label text="高：" x="328" y="263" layer="1" size="20" toolTip="输入&quot;row,col&quot;格式，算出行列拼图" align="right" width="38" height="30"/>
   <Button label="切割" skin="png.comp.button" x="283" y="418" layer="1" labelSize="30" var="btnCut" width="222" height="59"/>
   <Button skin="png.comp.btn_close" x="741" y="24" layer="1" var="btnClose"/>
   <ProgressBar skin="png.comp.progress" x="223" y="348" layer="1" width="351" height="14" var="progressBar" value="0" label="0%" sizeGrid="10,2,10,2"/>

@@ -8,15 +8,13 @@ package com.xl.tool.util
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	import flash.net.FileFilter;
-	import flash.net.FileReference;
-	import flash.utils.flash_proxy;
 	
 	import morn.core.components.Label;
 	import morn.core.components.ProgressBar;
 
 	public class CutUtil
 	{
-		private var bigFileRer:FileReference;
+		private var bigFileRer:File;
 		private var bigPicBmd:BitmapData;
 		private var saveFile:File;
 		private var cutItems:Vector.<CutItem>;
@@ -24,26 +22,22 @@ package com.xl.tool.util
 		private var progressBar:ProgressBar;
 		private var curLoadCount:int;
 		private var sumLoadCound:int;
-		
+		private var loader:Loader;
 		public function CutUtil(lblDic:Label,progressBar:ProgressBar)
 		{
 			this.lblDic = lblDic;
 			this.progressBar = progressBar;
-			this.saveFile = new File();
-			this.bigFileRer = new FileReference();
-			this.saveFile.addEventListener(Event.SELECT,this.onSaveFileDic);
+			this.bigFileRer = new File();
 			this.bigFileRer.addEventListener(Event.SELECT,this.onBitPicFileRer);
 			this.bigFileRer.addEventListener(Event.COMPLETE,onBitPicLoadComplete);
 		}
-		private function onSaveFileDic(e:Event):void
-		{
-			this.lblDic.text = this.saveFile.nativePath;
-		}
 		private function onBitPicFileRer(e:Event):void
 		{
+			this.lblDic.text = this.bigFileRer.nativePath.substr(0,this.bigFileRer.nativePath.length - this.bigFileRer.name.length - 1);
+			this.saveFile = new File(this.lblDic.text);
 			bigFileRer.load();
 		}
-		private var loader:Loader;
+		
 		private function onBitPicLoadComplete(e:Event):void
 		{
 			loader = new Loader();
@@ -75,8 +69,6 @@ package com.xl.tool.util
 		 */
 		public function cutPicture(iw:int,ih:int):void
 		{
-			
-			
 			this.cutItems = new Vector.<CutItem>();
 			var row:int = this.bigPicBmd.height / ih;
 			var lastRowH:int = this.bigPicBmd.height % ih;
@@ -111,10 +103,5 @@ package com.xl.tool.util
 			
 		}
 		
-		
-		public function saveCutPictureDic():void
-		{
-			this.saveFile.browseForDirectory("选择切割图片路径");
-		}
 	}
 }
